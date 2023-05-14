@@ -1,0 +1,33 @@
+Package: BPTOSimulator
+Title: Conjoint Simulator Boilerplate
+Version: 0.1.9000
+Authors@R: person('Michal', 'Czyz', email = 'michal@codingmanatee.ninja', role = c('cre', 'aut'))
+Description: Boilerplate BPTO Simulator based on HB.
+License: MIT + file LICENSE
+Imports: 
+    attempt,
+    config,
+    DT,
+    dplyr,
+    glue,
+    golem,
+    ggplot2,
+    htmltools,
+    processx,
+    scales,
+    shiny,
+    shinycssloaders,
+    shinydashboard,
+    shinyWidgets,
+    tidyr (>= 1.0),
+    rlang,
+    stats,
+    purrr,
+    snakecase
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Suggests: 
+    testthat (>= 2.1.0)
+Depends: 
+    R (>= 2.10)

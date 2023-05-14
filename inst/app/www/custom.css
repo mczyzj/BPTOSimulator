@@ -1,0 +1,161 @@
+/* logo */
+        .skin-blue .main-header .logo {
+                              background-color: #000;
+                              }
+
+        /* logo when hovered */
+        .skin-blue .main-header .logo:hover {
+                              background-color: #ff2975;
+                              }
+
+        /* navbar (rest of the header) */
+        .skin-blue .main-header .navbar {
+                              background-color: #000;
+                              }        
+       .skin-blue .main-header .navbar .nav>li:hover {
+                              background-color: #ff2975;
+       }
+       
+       .nav>li>a>img:hover {
+                          -webkit-filter: contrast(300%) grayscale(50%);
+                          -moz-filter: contrast(300%) grayscale(50%);
+                          -o-filter: contrast(300%) grayscale(50%);
+      }
+           
+       caption {
+                           font-size: 16px;
+                           font-weight: bold;
+                           color: "#266183";
+       }
+       
+        /* main sidebar */
+        .skin-blue .main-sidebar {
+                              background-color: #000;
+                              color: #ffffff;
+                              }
+
+        /* active selected tab in the sidebarmenu */
+        .skin-blue .main-sidebar .sidebar .sidebar-menu .active a{
+                              background-color: #000;
+                              color: #ffffff;
+                              }
+
+        .skin-blue .main-sidebar .sidebar .sidebar-menu{
+                              color: #ffffff
+        }
+
+
+        /* other links in the sidebarmenu */
+        .skin-blue .main-sidebar .sidebar .sidebar-menu a{
+                              background-color: #000;
+                              color: #ffffff;
+                              }
+
+
+        /* other links in the sidebarmenu when hovered */
+         .skin-blue .main-sidebar .sidebar .sidebar-menu a:hover{
+                              background-color: #ff2975;
+                              color: #ffffff;
+                              }
+        /* toggle button when hovered  */                    
+         .skin-blue .main-header .navbar .sidebar-toggle:hover{
+                              background-color: #ff2975;
+                              color: #ffffff;
+         }
+        /* box header  */                    
+         .skin-blue .content-wrapper .box-header{
+                              background-color: #8c1eff;
+                              color: #ffffff;
+         }
+        /* tabbox header  */                    
+         .skin-blue .content-wrapper .nav-tabs-custom>.nav-tabs{
+                              background-color: #8c1eff;
+                              color: #ffffff;
+         }
+         /* boxtab tab*/
+        .skin-blue .nav-tabs-custom > .nav-tabs > li > a{
+                              background-color: #8c1eff;
+                              color: #ffffff;
+                              border: 0 0 0 0;
+         }
+          
+        /* boxtab tab*/
+        .skin-blue .nav-tabs-custom > .nav-tabs > li.active > a{
+                              background-color: #ff2975;
+                              border-top-color: #ff2975;
+                              color: #fffff;
+        }
+         
+        .nav-tabs-custom .nav-tabs li.active {
+                              border-top-color: #ff2975;
+         }
+          
+         .nav-tabs-custom .nav-tabs li {
+                              border: 0 0 0 0;
+                              margin: 0 0 0 0;
+                              padding: 0 0 0 0;
+         }
+          
+         /* box tab header title  */                    
+         .skin-blue .nav-tabs-custom > .nav-tabs > li.header {
+                              background-color: #8c1eff;
+                              color: #ffffff;
+         }
+         .btn-Gear {
+                              background-color: #8c1eff;
+                              color: #ffffff;
+        
+         }
+         .small-box.bg-blue { 
+                              background-color: #ff2975 !important;
+                              color: #ffffff !important;
+                              border-color: #8c1eff;
+                              border-width: 1px;
+                              border-style: solid;
+         }
+         
+         /* checkbox  */
+         input[type="checkbox"]:checked + label:before {
+                              height: 16px;
+                              width: 16px;
+                              background-color: #8c1eff;
+                              border-color: #ffd319;
+                              border-radius: 3px;
+              }
+         input[type="checkbox"]:checked + label:after {
+                              height: 16px;
+                              width: 16px;
+                              background-color: #8c1eff;
+                              border-color: #ffd319;
+                              border-radius: 3px;
+              }
+         input[type="radio"]:checked + label:before {
+                              height: 16px;
+                              width: 16px;
+                              background-color: #8c1eff;
+                              border-color: #ffd319;
+                              border-radius: 50%;
+              }
+         input[type="radio"]:checked + label:after {
+                              height: 16px;
+                              width: 16px;
+                              background-color: #8c1eff;
+                              border-color: #ffd319;
+                              border-radius: 50%;
+              }
+         .shiny-output-error-validation {
+                              color: #8c1eff;
+                              font-size: 24px;
+                              font-weight: bold;
+              }
+              
+          
+          /* main text icons */    
+          .icon-violet {
+            color: #8c1eff;
+          }
+
+          /* content bg  */
+          .content-wrapper {
+            background-color: #3c345c !important;
+          }

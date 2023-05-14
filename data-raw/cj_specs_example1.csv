@@ -1,0 +1,9 @@
+Product,Min,Base,Max,dm,cost
+Product X,50,100,150,0.1,10
+Competitor 1,120,150,220,0.15,15
+Competitor 2,80,90,100,0.15,15
+Competitor 3,120,150,180,0.15,15
+Competitor 4,100,130,170,0.15,15
+Competitor 5,100,130,160,0.15,15
+Competitor 6,100,150,200,0.15,15
+Others,0,0,0,0,0

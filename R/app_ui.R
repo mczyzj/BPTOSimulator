@@ -8,8 +8,7 @@ app_ui <- function(request) {
   options(spinner.color = "#f111ff",
           spinner.type = 8)
   
-  ### global variables ###
-  #_rinskor
+  ### Global Variables ###
   products_change <- BPTOSimulator::cj_specs_example1 %>%
     filter(.data$Min != .data$Max)
 
@@ -50,7 +49,7 @@ app_ui <- function(request) {
                    width = 12, solidHeader = TRUE, collapsible = TRUE,
                    withSpinner(htmlOutput("mainHTML"), type =8))
                )),
-      #### Simulator tab content
+  #### Simulator tab content
     tabItem(tabName = "simulator",
             ### FILTER BOX ###
             fluidRow(

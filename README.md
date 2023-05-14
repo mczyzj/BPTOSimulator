@@ -2,6 +2,7 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 <img src="inst/app/www/cj_logo.png" width="250px" align= "right" />
+<img src="inst/figures/bpto_hex.png" width="250px" align= "left" />
 
 # BPTOSimulator
 

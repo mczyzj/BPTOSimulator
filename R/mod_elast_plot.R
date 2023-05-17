@@ -1,23 +1,34 @@
-#' elasticity_plot UI Function
+#' @title Elasticity Plot UI Function
 #'
 #' @description A shiny Module.
 #'
 #' @param id,input,output,session Internal parameters for {shiny}.
-#'
+#' @param names_products Names of products for which there is price range in 
+#'   Specification.
+#' @param data Data frane with HB utilities.
+#' @param specs Table with products specification.
+#' @param respid_key Vector with Respondents ID to filter.
+#' @param product_names Vector of product names.
+#' @param current_prices Snapshot of prices from Assumptions tab.
+#' @param current_dm Snapshot of distribution margin from Assumptions tab.
+#' @param current_cost Snapshot of cost from Assumptions tab.
+#' @param current_ms Snapshot of market size from Assumption tab.
+#' @param validateButton Object that triggers validation.
+#' 
 #' @noRd 
-mod_elasticity_plot_ui <- function(id, n_products){
+mod_elasticity_plot_ui <- function(id, names_products){
   ns <- NS(id)
   tagList(
      dropdownButton(
        tags$h3("Choose products"),
        selectInput(inputId = ns('elasticityX'),
                    label = 'Product input',
-                   choices = n_products,
-                   selected = n_products[1]),
+                   choices = names_products,
+                   selected = names_products[1]),
        selectInput(inputId = ns('elasticityY'),
                    label = 'Product outcome',
-                   choices = n_products,
-                   selected = n_products[1]),
+                   choices = names_products,
+                   selected = names_products[1]),
        awesomeRadio(inputId = ns("chartSelect"),
                     label = h4("Choose what to plot"),
                     choices = c("Shares", "Sales and Profit"),

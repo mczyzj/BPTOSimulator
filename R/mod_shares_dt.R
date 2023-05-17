@@ -3,6 +3,15 @@
 #' @description A shiny Module.
 #'
 #' @param id,input,output,session Internal parameters for {shiny}.
+#' @param data Data frane with HB utilities.
+#' @param specs Table with products specification.
+#' @param respid_key Vector with Respondents ID to filter.
+#' @param product_names Vector of product names.
+#' @param current_prices Snapshot of prices from Assumptions tab.
+#' @param current_dm Snapshot of distribution margin from Assumptions tab.
+#' @param current_cost Snapshot of cost from Assumptions tab.
+#' @param current_ms Snapshot of market size from Assumption tab.
+#' @param validateButton Object that triggers validation.
 #'
 #' @noRd 
 mod_shares_dt_ui <- function(id){

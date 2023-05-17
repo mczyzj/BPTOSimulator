@@ -5,13 +5,13 @@
 #' @param specs Data frame with products specification.
 #' @param respid_key Vector with Respondents ID to filter.
 #' @param product_names Vector of product names.
-#' @param current_prices Prices from Assumptions tab.
-#' @param current_dm Distribution margin from Assumptions tab.
-#' @param current_cost Cost from Assumptions tab.
-#' @param current_ms Market size from Assumption tab.
+#' @param current_prices Snapshot of prices from Assumptions tab.
+#' @param current_dm Snapshot of distribution margin from Assumptions tab.
+#' @param current_cost Snapshot of cost from Assumptions tab.
+#' @param current_ms Snapshot of market size from Assumption tab.
 #'
 #'
-#' @return Data frame.
+#' @return Data frame for plot functions.
 #' @export
 
 table_to_plot <- function(data,

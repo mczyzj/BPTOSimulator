@@ -24,16 +24,16 @@ table_to_plot(
 
 \item{product_names}{Vector of product names.}
 
-\item{current_prices}{Prices from Assumptions tab.}
+\item{current_prices}{Snapshot of prices from Assumptions tab.}
 
-\item{current_dm}{Distribution margin from Assumptions tab.}
+\item{current_dm}{Snapshot of distribution margin from Assumptions tab.}
 
-\item{current_cost}{Cost from Assumptions tab.}
+\item{current_cost}{Snapshot of cost from Assumptions tab.}
 
-\item{current_ms}{Market size from Assumption tab.}
+\item{current_ms}{Snapshot of market size from Assumption tab.}
 }
 \value{
-Data frame.
+Data frame for plot functions.
 }
 \description{
 Creates table to be used by plotting functions.

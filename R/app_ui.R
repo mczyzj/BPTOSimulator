@@ -5,8 +5,7 @@
 #' @noRd
 app_ui <- function(request) {
   
-  options(spinner.color = "#f111ff",
-          spinner.type = 8)
+  options(spinner.color = "#f111ff", spinner.type = 8)
   
   ### Global Variables ###
   products_change <- BPTOSimulator::cj_specs_example1 %>%
@@ -110,7 +109,8 @@ app_ui <- function(request) {
                 tabPanel(
                   span(icon("chart-line"), " Elasticity Chart"),
                   mod_elasticity_plot_ui(
-                    "elasticity_plot_ui_1", n_products = products_change$Product
+                    "elasticity_plot_ui_1",
+                    names_products = products_change$Product
                   )
                 ),
                 tabPanel(

@@ -2,12 +2,13 @@
 % Please edit documentation in R/fct_calc_shr.R
 \name{make_iter}
 \alias{make_iter}
-\title{Make Iterations to Calculate Elasticity}
+\title{Make Iterations Steps to Calculate Elasticity}
 \usage{
 make_iter(product_input, specs, n_points = 20)
 }
 \arguments{
-\item{product_input}{Character. Product for which elasticity will be calculated.}
+\item{product_input}{Character. Product for which elasticity will be 
+calculated.}
 
 \item{specs}{Data frame. Table with products specification.}
 

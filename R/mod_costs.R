@@ -4,15 +4,17 @@
 #'
 #' @param id,input,output,session Internal parameters for {shiny}.
 #' @param data Dataframe with specs.
-#' @param n_sliders Vector of the same length as products for which cost input 
-#' fileds should be generated.
+#' @param names_num_input Names vector of the same length as products for which 
+#'   cost input fileds should be generated.
+#' @param validateButton Object that triggers validation.
+#' @param resetButton Object that triggers reset to default settings.
 #'
 #' @noRd
-mod_costs_ui <- function(id, data, n_sliders) {
+mod_costs_ui <- function(id, data, names_num_input) {
   ns <- NS(id)
   tagList(
-    dm_list <- vector("list", length(n_sliders)),
-    for (i in 1:length(n_sliders)) {
+    dm_list <- vector("list", length(names_num_input)),
+    for (i in 1:length(names_num_input)) {
       dm_list[[i]] <- numericInput(
         inputId = ns(snakecase::to_snake_case(data[i, 1])),
         label   = data[i, 1],

@@ -3,6 +3,7 @@
 #' @description A shiny Module.
 #'
 #' @param id,input,output,session Internal parameters for {shiny}.
+#' @param validateButton Object that triggers validation.
 #'
 #' @noRd 
 #'

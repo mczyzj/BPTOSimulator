@@ -50,12 +50,12 @@ elasticity_list_vals <- function(iterated_df) {
 #' @description Elsticity Plot of shares.
 #'
 #' @param iterated_df Data frame which is result of iter shares function.
-#' @param product_input Product input
-#' @param product_output Product output
-#' @param ranges range of plot to put elasticity
-#' @param e_share share elasticity value
+#' @param product_input Product input.
+#' @param product_output Product output.
+#' @param ranges Range of plot to put elasticity.
+#' @param e_share Share elasticity value.
 #' 
-#' @return ggplot object
+#' @return `ggplot` object
 #' @export
 
 plot_e_share <- function(iterated_df,
@@ -89,14 +89,14 @@ plot_e_share <- function(iterated_df,
 #' @description Elasticity plot of sales, channel sales and profit.
 #'
 #' @param iterated_df Data frame which is result of iter shares function.
-#' @param product_input Product input
-#' @param product_output Product output
-#' @param ranges range of plot to put elasticity
-#' @param e_sales sales elasticity value
-#' @param e_ch_sales channel sales elasticity value
-#' @param e_profit profit elasticity value
+#' @param product_input Product input.
+#' @param product_output Product output.
+#' @param ranges Range of plot to put elasticity.
+#' @param e_sales Sales elasticity value.
+#' @param e_ch_sales Channel sales elasticity value.
+#' @param e_profit Profit elasticity value.
 #' 
-#' @return ggplot object
+#' @return `ggplot` object
 #' @export
 
 plot_e_sp <- function(iterated_df,

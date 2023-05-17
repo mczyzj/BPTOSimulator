@@ -1,6 +1,5 @@
-#' Conjoint wrapper to change NULL to zero.
-#'
-#' \code{null_to_zero} changes null values to 0.
+#' @title NULL to zero wrapper.
+#' @description Changes null values to 0.
 #'
 #' @param data numeric or NULL value#'
 #'

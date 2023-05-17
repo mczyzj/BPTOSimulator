@@ -10,10 +10,8 @@ main_tab_html(simulator_name)
 \item{simulator_name}{Name of the simulator to be displayed.}
 }
 \value{
-Data frame with calculated shares by price step.
+HTML for Main Tab.
 }
 \description{
-Create main tab html
-
-\code{main_tab_html} generate_text.
+Create main tab html.
 }

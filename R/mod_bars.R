@@ -1,8 +1,18 @@
 #' barplots UI Function
 #'
-#' @description A shiny Module.
+#' @description A shiny Module to handle share / sales+channel margin+profit
+#'   barplot.
 #'
 #' @param id,input,output,session Internal parameters for {shiny}.
+#' @param data Data frane with HB utilities.
+#' @param specs Table with products specification.
+#' @param respid_key Vector with Respondents ID to filter.
+#' @param product_names Vector of product names.
+#' @param current_prices Snapshot of prices from Assumptions tab.
+#' @param current_dm Snapshot of distribution margin from Assumptions tab.
+#' @param current_cost Snapshot of cost from Assumptions tab.
+#' @param current_ms Snapshot of market size from Assumption tab.
+#' @param type Character. One of "Shares" or "Sales".
 #'
 #' @noRd
 mod_barplots_ui <- function(id){

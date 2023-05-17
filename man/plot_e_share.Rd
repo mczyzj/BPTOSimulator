@@ -9,16 +9,16 @@ plot_e_share(iterated_df, product_input, product_output, ranges, e_share)
 \arguments{
 \item{iterated_df}{Data frame which is result of iter shares function.}
 
-\item{product_input}{Product input}
+\item{product_input}{Product input.}
 
-\item{product_output}{Product output}
+\item{product_output}{Product output.}
 
-\item{ranges}{range of plot to put elasticity}
+\item{ranges}{Range of plot to put elasticity.}
 
-\item{e_share}{share elasticity value}
+\item{e_share}{Share elasticity value.}
 }
 \value{
-ggplot object
+`ggplot` object
 }
 \description{
 Elsticity Plot of shares.

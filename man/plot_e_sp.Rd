@@ -17,20 +17,20 @@ plot_e_sp(
 \arguments{
 \item{iterated_df}{Data frame which is result of iter shares function.}
 
-\item{product_input}{Product input}
+\item{product_input}{Product input.}
 
-\item{product_output}{Product output}
+\item{product_output}{Product output.}
 
-\item{ranges}{range of plot to put elasticity}
+\item{ranges}{Range of plot to put elasticity.}
 
-\item{e_sales}{sales elasticity value}
+\item{e_sales}{Sales elasticity value.}
 
-\item{e_ch_sales}{channel sales elasticity value}
+\item{e_ch_sales}{Channel sales elasticity value.}
 
-\item{e_profit}{profit elasticity value}
+\item{e_profit}{Profit elasticity value.}
 }
 \value{
-ggplot object
+`ggplot` object
 }
 \description{
 Elasticity plot of sales, channel sales and profit.

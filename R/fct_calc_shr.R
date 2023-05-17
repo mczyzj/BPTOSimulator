@@ -24,11 +24,12 @@ calc_scaler <- function(price_set, old_max, old_min, new_max = 1, new_min = -1) 
 }
 
 
-#' @title Make Iterations to Calculate Elasticity
+#' @title Make Iterations Steps to Calculate Elasticity
 #' @description Function to calulates steps (price points) for elasticyty
 #'   simulation.
 #'
-#' @param product_input Character. Product for which elasticity will be calculated.
+#' @param product_input Character. Product for which elasticity will be 
+#'   calculated.
 #' @param specs Data frame. Table with products specification.
 #' @param n_points Numeric. Number of points for which Max-Min range will be 
 #'   divided. Default `20`.
@@ -50,11 +51,11 @@ make_iter <- function(product_input,
 #' @title Calulate Shares for Elasticyty Simulation
 #'
 #' @description Iterates through prices of Input brand and calulates
-#' shares for Output brand.
+#'   shares for Output brand.
 #'
 #' @param product_input Input product for which elasticity will be calculated.
 #' @param product_output Output product for which elasticity will be calculated.
-#' @param data Data frame with hb utilities.
+#' @param data Data frame with HB utilities.
 #' @param specs Data frame with products specification.
 #' @param respid_key Vector with Respondents ID to filter.
 #' @param product_names Vector of product names.
@@ -65,7 +66,7 @@ make_iter <- function(product_input,
 #' @param n_points Number of points for which Max-Min range will be divided.
 #'
 #'
-#' @return Data frame with calculated shares by price step.
+#' @return Data frame with calculated shares by price steps.
 #' @export
 
 iter_share <- function(product_input,
@@ -115,17 +116,17 @@ iter_share <- function(product_input,
 #' @description Calculates shares, sales, channel sales and profit of 
 #'   all products in Specs.
 #'
-#' @param data df with hb utilities.
+#' @param data Data frane with HB utilities.
 #' @param specs Table with products specification.
-#' @param respid_key vector with Respondents ID to filter.
+#' @param respid_key Vector with Respondents ID to filter.
 #' @param product_names Vector of product names.
-#' @param current_prices snapshot of prices from Assumptions tab.
-#' @param current_dm snapshot of distribution margin from Assumptions tab.
-#' @param current_cost snapshot of cost from Assumptions tab.
-#' @param current_ms snapshot of market size from Assumption tab.
+#' @param current_prices Snapshot of prices from Assumptions tab.
+#' @param current_dm Snapshot of distribution margin from Assumptions tab.
+#' @param current_cost Snapshot of cost from Assumptions tab.
+#' @param current_ms Snapshot of market size from Assumption tab.
 #'
 #'
-#' @return Data frame with calculated shares by price step.
+#' @return Data frame with calculated shares for a given price.
 #' @export
 calc_shares <- function(data,
                         specs,
@@ -136,12 +137,12 @@ calc_shares <- function(data,
                         current_cost,
                         current_ms) {
   
-  ### set variables ###
+  ### Set variables 
   
   product_cols_n <- nrow(specs)
   current_utils <- utils_filter_df(data, respid_key) 
   
-  ### loop to set scaled prices ###
+  ### Loop to set scaled prices
   
   current_scalers <- vector("numeric", length(current_prices))
   

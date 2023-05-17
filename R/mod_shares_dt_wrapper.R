@@ -1,6 +1,5 @@
-#' Shares and sales DT wrapper
-#'
-#' \code{utils_shares_DT} creates DT table with shares and sales.
+#' @title Shares and Sales DT Wrapper
+#' @description Wrapper to create DT table with shares and sales.
 #'
 #' @param data Data frame with hb utilities.
 #' @param specs Data frame with specs.
@@ -11,7 +10,7 @@
 #' @param current_cost Vector of costs.
 #' @param current_ms Market size.
 #' 
-#' @return Data frame with filtered records.
+#' @return DT table with filtered records.
 #' @export
 
 utils_shares_DT <- function(data,
@@ -53,9 +52,8 @@ utils_shares_DT <- function(data,
   return(shares_DT)
 }
 
-#' DT formating wrapper
-#'
-#' \code{dt_common_formats} creates DT table with shares and sales.
+#' @title DT Formating Wrapper
+#' @description A wrapper to format DT table currency and percents.
 #'
 #' @param data DT data frame
 #'

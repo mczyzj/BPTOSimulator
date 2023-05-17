@@ -2,7 +2,7 @@
 % Please edit documentation in R/utils_filter_df.R
 \name{utils_filter_df}
 \alias{utils_filter_df}
-\title{Filter utils df to calculate shares based on choosen filters}
+\title{Filter Utils Data Frame}
 \usage{
 utils_filter_df(data, respid_key)
 }
@@ -15,5 +15,6 @@ utils_filter_df(data, respid_key)
 Data frame with filtered records.
 }
 \description{
-\code{utils_filter_df} filter utils df based on choosen filters.
+Returns filtered data frame with utilities based on choosen 
+  filters.
 }

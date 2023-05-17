@@ -2,7 +2,7 @@
 % Please edit documentation in R/utils_null_to_zero.R
 \name{null_to_zero}
 \alias{null_to_zero}
-\title{Conjoint wrapper to change NULL to zero.}
+\title{NULL to zero wrapper.}
 \usage{
 null_to_zero(data)
 }
@@ -13,5 +13,5 @@ null_to_zero(data)
 0 or \code{data} value.
 }
 \description{
-\code{null_to_zero} changes null values to 0.
+Changes null values to 0.
 }

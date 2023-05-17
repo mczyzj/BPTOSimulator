@@ -2,7 +2,7 @@
 % Please edit documentation in R/mod_shares_dt_wrapper.R
 \name{dt_common_formats}
 \alias{dt_common_formats}
-\title{DT formating wrapper}
+\title{DT Formating Wrapper}
 \usage{
 dt_common_formats(data)
 }
@@ -13,5 +13,5 @@ dt_common_formats(data)
 Data frame with filtered records.
 }
 \description{
-\code{dt_common_formats} creates DT table with shares and sales.
+A wrapper to format DT table currency and percents.
 }

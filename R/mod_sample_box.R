@@ -3,6 +3,9 @@
 #' @description A shiny Module.
 #'
 #' @param id,input,output,session Internal parameters for {shiny}.
+#' @param data Data frame with utilities.
+#' @param respid_key Vector with Respondents ID to filter.
+#' @param type Character. "total" or "sample"
 #'
 #' @noRd 
 mod_sample_boxes_ui <- function(id){

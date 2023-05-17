@@ -1,11 +1,9 @@
 #' @title Main Tab HTML
-#' @description  Create main tab html
-#'
-#' \code{main_tab_html} generate_text.
+#' @description  Create main tab html.
 #'
 #' @param simulator_name Name of the simulator to be displayed.
 #'
-#' @return Data frame with calculated shares by price step.
+#' @return HTML for Main Tab.
 #' @export
 
 main_tab_html <- function(simulator_name) {

@@ -23,7 +23,7 @@ iter_share(
 
 \item{product_output}{Output product for which elasticity will be calculated.}
 
-\item{data}{Data frame with hb utilities.}
+\item{data}{Data frame with HB utilities.}
 
 \item{specs}{Data frame with products specification.}
 
@@ -42,9 +42,9 @@ iter_share(
 \item{n_points}{Number of points for which Max-Min range will be divided.}
 }
 \value{
-Data frame with calculated shares by price step.
+Data frame with calculated shares by price steps.
 }
 \description{
 Iterates through prices of Input brand and calulates
-shares for Output brand.
+  shares for Output brand.
 }

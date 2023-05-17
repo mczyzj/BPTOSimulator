@@ -4,15 +4,17 @@
 #'
 #' @param id,input,output,session Internal parameters for {shiny}.
 #' @param data Dataframe with specs.
-#' @param n_sliders Vector of the same length as products for which cost sliders 
-#' should be generated.
+#' @param names_sliders Names vector of the same length as products for which
+#'   price sliders  should be generated.
+#' @param validateButton Object that triggers validation.
+#' @param resetButton Object that triggers reset to default settings.
 #' @noRd 
 #'
-mod_sliders_ui <- function(id, data, n_sliders){
+mod_sliders_ui <- function(id, data, names_sliders){
   ns <- NS(id)
   tagList(
-    sliders_list <- vector("list", length(n_sliders)),
-    for (i in 1:length(n_sliders)) {
+    sliders_list <- vector("list", length(names_sliders)),
+    for (i in 1:length(names_sliders)) {
       sliders_list[[i]] <- sliderInput(
         inputId = ns(snakecase::to_snake_case(data[i, 1])),
         label   = data[i, 1],

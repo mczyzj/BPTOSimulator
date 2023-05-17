@@ -2,7 +2,7 @@
 % Please edit documentation in R/mod_shares_dt_wrapper.R
 \name{utils_shares_DT}
 \alias{utils_shares_DT}
-\title{Shares and sales DT wrapper}
+\title{Shares and Sales DT Wrapper}
 \usage{
 utils_shares_DT(
   data,
@@ -33,8 +33,8 @@ utils_shares_DT(
 \item{current_ms}{Market size.}
 }
 \value{
-Data frame with filtered records.
+DT table with filtered records.
 }
 \description{
-\code{utils_shares_DT} creates DT table with shares and sales.
+Wrapper to create DT table with shares and sales.
 }

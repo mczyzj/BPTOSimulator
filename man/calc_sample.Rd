@@ -2,7 +2,7 @@
 % Please edit documentation in R/utils_calc_sample.R
 \name{calc_sample}
 \alias{calc_sample}
-\title{Conjoint tools to calulate shares}
+\title{Calculate Sample Size}
 \usage{
 calc_sample(respid_key)
 }
@@ -10,8 +10,8 @@ calc_sample(respid_key)
 \item{respid_key}{IDs from data frame with currently applied filters.}
 }
 \value{
-Sample size.
+Numeric. Sample size.
 }
 \description{
-\code{calc_shares} calculates shares, sales, channel sales and profit.
+Calculates the sample size based on filters.
 }

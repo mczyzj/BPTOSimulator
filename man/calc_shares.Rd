@@ -16,24 +16,24 @@ calc_shares(
 )
 }
 \arguments{
-\item{data}{df with hb utilities.}
+\item{data}{Data frane with HB utilities.}
 
 \item{specs}{Table with products specification.}
 
-\item{respid_key}{vector with Respondents ID to filter.}
+\item{respid_key}{Vector with Respondents ID to filter.}
 
 \item{product_names}{Vector of product names.}
 
-\item{current_prices}{snapshot of prices from Assumptions tab.}
+\item{current_prices}{Snapshot of prices from Assumptions tab.}
 
-\item{current_dm}{snapshot of distribution margin from Assumptions tab.}
+\item{current_dm}{Snapshot of distribution margin from Assumptions tab.}
 
-\item{current_cost}{snapshot of cost from Assumptions tab.}
+\item{current_cost}{Snapshot of cost from Assumptions tab.}
 
-\item{current_ms}{snapshot of market size from Assumption tab.}
+\item{current_ms}{Snapshot of market size from Assumption tab.}
 }
 \value{
-Data frame with calculated shares by price step.
+Data frame with calculated shares for a given price.
 }
 \description{
 Calculates shares, sales, channel sales and profit of 

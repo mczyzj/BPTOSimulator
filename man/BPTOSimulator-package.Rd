@@ -4,9 +4,15 @@
 \name{BPTOSimulator-package}
 \alias{BPTOSimulator}
 \alias{BPTOSimulator-package}
-\title{BPTOSimulator: Conjoint Simulator Boilerplate}
+\title{BPTO Simulator}
 \description{
-Boilerplate BPTO Simulator based on HB.
+This is a boilerplate for BPTO Simulator for HB conjoint models.
+  It works with Alternative Specific design, where the Alternatives are 
+  brands, and their only attribute is Price. The package supports the models
+  with some alternatives having constant price (for details please visit 
+  Vignette). To build the simulator you need to provide data in proper format,
+  and the package will figure out itselfe the user interface. As of now, it
+  gives the insight in Share of Preference, Revenue, Channel Sales and Profit.
 }
 \author{
 \strong{Maintainer}: Michal Czyz \email{michal@codingmanatee.ninja}
